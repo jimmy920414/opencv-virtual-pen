@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <img src="{{url for('video_feed') }}">
+        <div class="me">
+            <video src="inputVideo" height="200" width="300" alt="" meted></video>
+        </div>
+    </div>
+    <!-- <script>
+        let inputVideo = document.querySelector('#inputVideo')
+
+
+        navigator.mediaDevices
+          .getUserMedia(constraints)
+          .then(function (stream){
+            if ('scrObject' in inputVideo){
+                inputVideo.scrObject = stream
+            }else {
+                inputVideo.src = windows.URL.creatObjectURL(stream)
+            }
+          })
+
+          inputVideo.addEventListener('loadedmetadata', function(){
+            inputVideo.play()
+            console.log('inputVideo on loadedmetadata')
+          })
+    </script> -->
+</body>
+
+</html>
